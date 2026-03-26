@@ -11,8 +11,8 @@ public class PlayerMov : MonoBehaviour
     void Update()
     {
 // inputs de teste mais simples que usam tanto WASD quanto as setas (mudar depois para apenas WASD)
-        mov.x = Input.GetAxis("Horizontal");
-        mov.y = Input.GetAxis("Vertical");
+        mov.x = Input.GetAxisRaw("Horizontal");
+        mov.y = Input.GetAxisRaw("Vertical");
 
         mov.Normalize();
     }
