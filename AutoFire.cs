@@ -21,6 +21,8 @@ public class AutoFire : MonoBehaviour
 
     void Shoot()
     {
-        Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+        GameObject bullet = Instantiate(bulletPrefab);
+        bullet.transform.position = firePoint.position;
+        bullet.transform.rotation = firePoint.rotation;
     }
 }
