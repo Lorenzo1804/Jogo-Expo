@@ -13,6 +13,6 @@ public class Bullet : MonoBehaviour
 
     void Update()
     {
-        transform.Translate(transform.right * speed * Time.deltaTime);
+        transform.position += transform.right * speed * Time.deltaTime;
     }
 }
